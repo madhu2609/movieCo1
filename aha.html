@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>MovieCo.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+        body {
+            /* background-image:url(https://images.pexels.com/photos/3942924/pexels-photo-3942924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: 2500px 3000px;
+
+        }
+
+        .container {
+            display: flex;
+            margin-bottom: -55px;
+            margin-top: -44px;
+            background-color: black;
+            /* height: 40px; */
+            /* position: sticky; */
+        }
+
+        .items {
+            margin: 33px;
+            margin-top: 52px;
+            margin-left: -19px;
+            padding-left: 31px;
+            padding: 12px;
+            font-family: 'Macondo', cursive;
+            font-size: 22px;
+            padding-bottom: 40px;
+            padding-left: 18px;
+            cursor: pointer;
+            height: 33px;
+            color: rgb(248, 169, 23);
+            /* border: 2px solid red; */
+        }
+
+        .items:hover {
+            color: rgb(222, 203, 167);
+            text-shadow: 1px 1px white;
+            background-color: rgb(8, 8, 8);
+            text-decoration: underline;
+            border-radius: 18px;
+
+        }
+
+        #home {
+            margin-left: 0px;
+        }
+
+        #hollywood {
+            margin-left: 0px;
+            padding-left: 0px;
+
+        }
+
+        #search {
+            width: 86px;
+            padding: 30px;
+            margin-right: -34px;
+            padding-right: 3px;
+            margin-top: 52px;
+        }
+
+        #search img {
+            width: 29px;
+            height: 30px;
+        }
+
+        img {
+            width: 500px;
+            height: 495px;
+            float: left;
+            margin-top: 25px;
+            margin-left: -3px;
+            border-radius: 35px;
+            /* margin: auto; */
+        }
+
+
+        img:hover {
+            box-shadow: 2px 2px 4px 4px grey;
+            width: 1440px;
+            height: 520px;
+
+        }
+
+        #top {
+            width: 40px;
+            margin: 120px;
+            height: 50px;
+            margin-left: -23px;
+            margin-top: -11px;
+
+        }
+
+        #right {
+            width: 60px;
+            height: 70px;
+            margin-top: -11px;
+            margin-left: -45px;
+
+        }
+
+        .home {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+
+
+        .home img {
+            width: 300px;
+            height: 450px;
+            margin: 30px;
+            margin-top: -61px;
+            padding: 24px;
+
+
+        }
+
+        .home img:hover {
+            /* position: relative; */
+            width: 330px;
+            height: 490px;
+            box-shadow: 2px 2px 2px 2px rgb(203, 201, 80);
+
+
+        }
+
+
+
+        h3 {
+            text-align: left;
+            padding-left: 15px;
+            color: white;
+            font-size: 30px;
+            padding-top: 10px;
+
+            font-family: 'Macondo', cursive;
+
+        }
+
+        h4 {
+            display: flex;
+            flex-direction: row;
+            margin-left: 130px;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+
+            margin-top: 4px;
+
+        }
+
+        #subscribe button {
+            /* background-color: #903636; */
+            border-radius: 8px;
+            height: 30px;
+            background-color: red;
+            width: 120px;
+            font-size: 22px;
+            margin-top: 2px;
+            margin-left: 0px;
+            /* padding-bottom: -25px; */
+            margin-bottom: 20px;
+
+
+
+
+        }
+
+        .btn {
+            background-color: black;
+            margin: 33px;
+            margin-top: 52px;
+            margin-left: -19px;
+            padding-left: 31px;
+            padding: 12px;
+            color: orange;
+            font-family: 'Macondo', cursive;
+            font-size: 22px;
+            border: 2px solid black;
+        }
+        .btn:hover{
+            color: rgb(222, 203, 167);
+            text-shadow: 1px 1px white;
+            background-color: rgb(8, 8, 8);
+            text-decoration: underline;
+            border-radius: 18px;
+        }
+
+        #subscribe :hover {
+            background-color: rgb(122, 153, 20);
+        }
+
+
+        /* #search img {
+            width: 20px;
+            height: 20px;
+
+        } */
+
+        #login img {
+            margin-left: -78px;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .ok {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #carouselExampleInterval img:hover {
+            border-radius: 45px;
+            height: 580px;
+        }
+
+        .dropdown{
+            margin: 33px;
+            margin-top: 19px;
+            margin-left: -19px;
+            padding-left: 31px;
+            padding: 12px;
+            font-family: 'Macondo', cursive;
+            font-size: 22px;
+            padding-bottom: 40px;
+            padding-left: 18px;
+            cursor: pointer;
+            height: 33px;
+            color: rgb(248, 169, 23);
+
+        }
+        .dropdown:hover>.dropdown-menu{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark"></nav>
+
+        <div class="items" id="Home"><img id="top"
+                src="https://cdn.vectorstock.com/i/1000x1000/15/60/reel-of-film-sign-orange-icon-on-black-background-vector-13391560.webp"
+                alt="">
+        </div>
+        <a href="">
+            <div class="items" href=#Home id="Home">Home</div>
+        </a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tollywood
+            </a>
+            <!-- <a href="#movieco"><div class="items" href=#recent id="Tollywood">Tollywood</div></a> -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Temper</a></li>
+                <li><a class="dropdown-item" href="#">RRR</a></li>
+                <li><a class="dropdown-item" href="#">Rebel</a></li>
+                <li><a class="dropdown-item" href="#">Acharya</a></li>
+                <li><a class="dropdown-item" href="#">Jathi Ratnalu</a></li>
+                <li><a class="dropdown-item" href="#">Raja the Great</a></li>
+            </ul>
+          </li>
+
+        <!-- <a href="#movieco"><div class="items" href=#recent id="Tollywood">Tollywood</div></a> -->
+        <!-- Example single danger button -->
+        <!-- <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tollywood
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Temper</a></li>
+                <li><a class="dropdown-item" href="#">RRR</a></li>
+                <li><a class="dropdown-item" href="#">Rebel</a></li>
+                <li><a class="dropdown-item" href="#">Acharya</a></li>
+                <li><a class="dropdown-item" href="#">Jathi Ratnalu</a></li>
+                <li><a class="dropdown-item" href="#">Raja the Great</a></li>
+            </ul>
+        </div> -->
+        <a href="#toprated">
+            <div class="items" href=#toprated id="Bollywood">Bollywood</div>
+        </a>
+        <a href="#recent">
+            <div class="items" id="Hollywood">Hollywood</div>
+        </a>
+        <!-- <div class="items" id="search"> <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdb4r8bEeGHv44ENLSTP1f8Rt3iY7cR3qgSQ&usqp=CAU"
+                alt="error"> </div> -->
+        <div class="items"><input type="text" placeholder="search a movie"></div>
+        <div class="items" id="subscribe"><button>subscribe</button></div>
+        <div class="items" id="login "> <img id="right"
+                src="https://cdn.vectorstock.com/i/1000x1000/94/38/avatar-flat-icon-on-black-background-black-style-vector-25959438.webp"
+                alt=""> </div>
+    </div>
+    <!-- <a href="https://downsrips.xyz/?p=33194" target="_blank">
+        <div><img
+                src="https://telanganatoday.com/wp-content/uploads/2022/04/IMAX-unveils-Yashs-dhamakedaar-fierce-look-in-K.G.F.-Chapter-2-poster.jpg"
+                alt="reload"></div>
+    </a> -->
+    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://telanganatoday.com/wp-content/uploads/2022/04/IMAX-unveils-Yashs-dhamakedaar-fierce-look-in-K.G.F.-Chapter-2-poster.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://www.filmibeat.com/img/2021/04/vakeelsaab-1617903308.jpg" class="d-block w-100"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://moviekoop.com/Images/Cover_Photos/Dia-Movie-Poster.jpg" class="d-block w-100"
+                    alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <div>
+        <h3>Recent Releases</h3>
+    </div>
+    <div class="home" id="recent">
+
+        <!-- <div><h3>Recent Releases</h3></div> -->
+
+        <a id="bah" href="https://www.hotstar.com/in/movies/baahubali2-the-conclusion/1770016137/watch?utm_source=gwa"
+            target="_blank">
+            <div><img src="https://upload.wikimedia.org/wikipedia/en/9/93/Baahubali_2_The_Conclusion_poster.jpg" alt="">
+                <!-- <h4>Bhahubali-2</h4> -->
+            </div>
+        </a>
+        <a href="" target="_blank">
+            <div><img src="https://wallpaperaccess.com/full/5153364.jpg" alt="">
+
+            </div>
+            <!-- <h4>Puspha</h4> -->
+
+        </a>
+        <a href="" target="_blank">
+            <div><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Sarkaru_Vaari_Paata.jpg" alt="">
+                <!-- <h4>Sarkaruvari paata</h4> -->
+            </div>
+        </a>
+        <a href="https://www.hotstar.com/in/movies/akhanda/1260079644/watch?utm_source=gwa" target="_blank">
+            <div><img
+                    src="https://m.media-amazon.com/images/M/MV5BY2Y0YTlkZmMtZDMwZi00MDQwLThmYmUtZjQzMjRlMmQzMTNiXkEyXkFqcGdeQXVyNTgxODY5ODI@._V1_.jpg"
+                    alt="">
+                <!-- <h4>Akhanda</h4> -->
+            </div>
+        </a>
+    </div>
+
+    <div>
+        <h3>Top Rated Movies</h3>
+    </div>
+    <div class="home" id="toprated">
+        <a href="" target="_blank">
+            <div><img
+                    src="https://occ-0-1167-300.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABZbfPZ3lc71kHF4lybzJf5WgC0tYDQI8qxNBlMuqdgPQ1p_0D8K2KQagnU1VQdyiCeOdajH6L5TluX17Sbstc22dZaJ8.jpg"
+                    alt="">
+                <!-- <h4>Shyam singha roy</h4> -->
+            </div>
+        </a>
+        <a href="https://www.hotstar.com/in/movies/rangasthalam/1260009838/watch?utm_source=gwa" target="_blank">
+            <div><img
+                    src="https://m.media-amazon.com/images/M/MV5BMjQ1MjFkN2EtOTU4NS00NDkzLThhNzItODkzYWNjZDMxZjE0XkEyXkFqcGdeQXVyNTgxODY5ODI@._V1_.jpg"
+                    alt="">
+                <!-- <h4>Rangastalam</h4> -->
+            </div>
+        </a>
+        <a href="" target="_blank">
+            <div><img
+                    src="https://m.media-amazon.com/images/M/MV5BOTE1ZDA3NDEtMDZlNS00MjlkLWFmNzAtYzVmYWJmMzEwMDVlXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
+                    alt="">
+                <!-- <h4>Geetha Govindam</h4> -->
+            </div>
+        </a>
+        <a href="https://www.zee5.com/movies/details/geeta-govinda/0-0-105149?utm_source=google_web&utm_medium=watchaction&utm_campaign=google_watch&utm_content=geeta_govinda"
+            target="_blank">
+            <div><img
+                    src="https://m.media-amazon.com/images/M/MV5BYzUxZDIyYmMtNGNhYi00NDU5LWE0MGYtZDI3ODIzOWI1NjE3XkEyXkFqcGdeQXVyMTQ4ODU3Mjc1._V1_.jpg"
+                    alt="">
+                <!-- <h4>Dj Tillu</h4> -->
+            </div>
+        </a>
+
+        <div class="ok" id="number1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, eveniet!</div>
+        <div class="ok" id="number2"></div>
+        <div class="ok" id="number3"></div>
+        <div class="ok" id="number4"></div>
+        <div class="ok" id="number5"></div>
+        <div class="ok" id="number6"></div>
+        <div class="ok" id="number7"></div>
+        <div class="ok" id="number8"></div>
+
+
+    </div>
+
+    <div>
+        <h3>Movieco Originals</h3>
+    </div>
+    <div class="home" id="movieco">
+
+        <!-- <div><h3>Recent Releases</h3></div> -->
+
+        <a id="bah" href="https://www.hotstar.com/in/movies/baahubali2-the-conclusion/1770016137/watch?utm_source=gwa"
+            target="_blank">
+            <div><img
+                    src="https://resizing.flixster.com/fLiPKJwqtPJZ1ZFSwYl4-YoYaBQ=/ems.ZW1zLXByZC1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA=="
+                    alt="">
+                <!-- <h4>Money Heist</h4> -->
+            </div>
+        </a>
+        <a href="" target="_blank">
+            <div><img src="https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg" alt="">
+                <!-- <h4>Dangal</h4> -->
+            </div>
+        </a>
+        <a href="" target="_blank">
+            <div><img
+                    src="https://m.media-amazon.com/images/M/MV5BNTY2NDIwNWEtODRmNy00MTAxLTkwYjktY2UyZjlhNGY2YTI2XkEyXkFqcGdeQXVyMTA2ODkwNzM5._V1_.jpg"
+                    alt="">
+                <!-- <h4>Chichhore</h4> -->
+            </div>
+        </a>
+        <a href="https://www.hotstar.com/in/movies/akhanda/1260079644/watch?utm_source=gwa" target="_blank">
+            <div><img
+                    src="https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_.jpg"
+                    alt="">
+                <!-- <h4>BlackPanther</h4> -->
+            </div>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+
+
+    <footer>
+        <div>copyright &copy All Rights reserved </div>
+    </footer>
+
+
+
+</body>
+
+</html>
